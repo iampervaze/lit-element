@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script type="module" src="../dist/my-element.js"></script>
+  <base href="/">
+</head>
+
+<body>
+  <my-element></my-element>
+
+  <script>
+    let items = [
+      { id: 0, name: "Justin" },
+      { id: 1, name: "Steve" }
+    ];
+
+    let context = {
+      name: 'Sooli'
+    }
+    let el = document.querySelector("my-element");
+    el.items = items;
+    el.context = context;
+  </script>
+</body>
+
+</html>
